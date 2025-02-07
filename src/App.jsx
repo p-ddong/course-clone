@@ -7,7 +7,8 @@ import OurService from './components/OurService'
 import ClientSaid from './components/ClientSaid'
 import EventUpcoming from './components/Event'
 import Footer from './components/Footer'
-import ResVSearch from './components/ResVSearch'
+import Register from './components/Register'
+
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       <NavBar/>
       <Carousel/>
       <Popular/>
-      <ResVSearch/>
+      <Register/>
       <OurService/>
       <ClientSaid/>
       <EventUpcoming/>

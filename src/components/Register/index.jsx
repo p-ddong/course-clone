@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-const ResVSearch = () => {
+const Register = () => {
   return (
     <div className="res-search">
       <div className="res">
@@ -38,4 +38,4 @@ const ResVSearch = () => {
   );
 };
 
-export default ResVSearch;
+export default Register;
