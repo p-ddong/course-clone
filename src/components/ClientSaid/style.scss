@@ -1,0 +1,158 @@
+.client {
+  padding: 117px 0px;
+  background-image: url("../../assets/testimonials_background.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+
+    z-index: 0;
+    background-color: black;
+
+    opacity: 0.5;
+  }
+
+  .client-title {
+    z-index: 1;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 24px;
+    position: relative;
+    &:before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 55px;
+      height: 4px;
+
+      background: #ffb606;
+    }
+  }
+
+  .client-content {
+    position: relative;
+    .pag {
+        z-index: 1;
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-35px);
+        display: flex;
+        gap: 8px;
+      }
+      
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: #ffb606;
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    .slider-client {
+        width: 860px;
+      .slider-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1 {
+          font-size: 36px;
+          color: #ffb606;
+        }
+        p {
+          font-size: 14px;
+          line-height: 2.29;
+          font-weight: 400;
+          color: white;
+        }
+        .avt {
+          img {
+            width: 98px;
+            height: 98px;
+            border-radius: 50%;
+
+            margin-top: 43px;
+          }
+          h2 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #f6af03;
+            margin-top: 21px;
+          }
+          h3 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+  
+@media screen and (max-width: 990px) {
+    .client {
+       
+        .client-content {
+         
+          .slider-client {
+              width: 690px;
+          }
+        }
+      }
+}
+  
+@media screen and (max-width: 770px) {
+    .client {
+        .client-content {
+         
+          .slider-client {
+              width: 510px;
+          }
+        }
+      }
+}
+  
+@media screen and (max-width: 574px) {
+    .client {
+        .client-title{
+            font-size: 24px;
+        }
+        .client-content {
+         
+          .slider-client {
+              width: 90%;
+              .slider-item{
+                h1{
+                    margin-top: 50px;
+                }
+                p{
+                    font-size: 13px;
+                }
+              }
+          }
+        }
+      }
+}
